@@ -508,3 +508,23 @@ exercises.c:91:10: error: ‘j’ undeclared (first use in this function)
       |          ^
 Compilation failed
 bb68551
+Thu 14 Mar 2024 10:33:55 PM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:75:42: error: expected statement before ‘)’ token
+   75 |     if (arr1[x] <= arr2[y] && x <= size1))
+      |                                          ^
+exercises.c:80:7: error: ‘else’ without a previous ‘if’
+   80 |       else
+      |       ^~~~
+exercises.c:88:26: error: ‘i’ undeclared (first use in this function)
+   88 |       result[k++] = arr1[i++];
+      |                          ^
+exercises.c:88:26: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:92:26: error: ‘j’ undeclared (first use in this function)
+   92 |       result[k++] = arr2[j++];
+      |                          ^
+Compilation failed
+f41ff06
