@@ -447,3 +447,16 @@ Thu 14 Mar 2024 10:22:16 PM UTC:
  tests:  0|4
 total_score: 30/70
 f806bd2
+Thu 14 Mar 2024 10:22:53 PM UTC: 
+ exercises.c | 12 +-----------
+ 1 file changed, 1 insertion(+), 11 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:76:41: error: expected statement before ‘)’ token
+   76 |     if (arr1[x] <= arr2[y] && x < size1))
+      |                                         ^
+exercises.c:81:7: error: ‘else’ without a previous ‘if’
+   81 |       else
+      |       ^~~~
+Compilation failed
+f9b6fc2
