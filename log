@@ -35,3 +35,18 @@ exercises.c:59:9: error: value computed is not used [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 4be6e52
+Thu 14 Mar 2024 03:03:34 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:54: error: invalid operands to binary * (have ‘int *’ and ‘long unsigned int’)
+   53 |         result = (int*)realloc(result, (newSize + 1) * sizeof(int));
+      |                                        ~~~~~~~~~~~~~ ^
+      |                                                 |
+      |                                                 int *
+exercises.c:59:15: error: array subscript is not an integer
+   59 |         result[newSize] = arr[i];
+      |               ^
+Compilation failed
+d66b36e
