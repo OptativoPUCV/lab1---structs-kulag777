@@ -67,7 +67,25 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+                       int result[]) {
+  int* nuevoArreglo = (int*) malloc((size1 + size2) * sizeof(int));
+  if(nuevoArreglo == NULL) return EXIT_FAILURE;
+
+  int x = 0;
+  int y = 0;
+
+  for(int i = 0; i < (size1); i++)){
+      if(arreglo1[y] <= arreglo2[x])){
+        nuevoArreglo[i] = arreglo1[y];
+        y++;
+      }
+      else{
+        nuevoArreglo[i] = arreglo2[x];
+        x++;
+      }
+    }
+  return nuevoArreglo;
+                       }
 
 /*
 Ejercicio 5: Comprobación de Ordenación
