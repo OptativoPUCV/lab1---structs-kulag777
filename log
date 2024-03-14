@@ -339,3 +339,16 @@ exercises.c:71:8: error: variable ‘nuevoArreglo’ set but not used [-Werror=u
 cc1: all warnings being treated as errors
 Compilation failed
 b1604a1
+Thu 14 Mar 2024 09:56:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:78:28: error: expected statement before ‘)’ token
+   78 |     if (arr1[y] <= arr2[x]))
+      |                            ^
+exercises.c:83:7: error: ‘else’ without a previous ‘if’
+   83 |       else
+      |       ^~~~
+Compilation failed
+09bbecf
