@@ -406,3 +406,14 @@ exercises.c:80:13: error: expected ‘(’ before ‘{’ token
       |             (
 Compilation failed
 be6a687
+Thu 14 Mar 2024 10:13:48 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:80:13: error: expected ‘(’ before ‘{’ token
+   80 |     else if {
+      |             ^
+      |             (
+Compilation failed
+43cf049
