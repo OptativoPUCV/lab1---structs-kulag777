@@ -528,3 +528,9 @@ exercises.c:92:26: error: ‘j’ undeclared (first use in this function)
       |                          ^
 Compilation failed
 f41ff06
+Thu 14 Mar 2024 10:34:39 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  0|4
+total_score: 30/70
+d725f52
