@@ -395,3 +395,14 @@ Thu 14 Mar 2024 10:09:19 PM UTC:
  tests:  0|3
 total_score: 40/70
 bd82e99
+Thu 14 Mar 2024 10:12:01 PM UTC: 
+ exercises.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:80:13: error: expected ‘(’ before ‘{’ token
+   80 |     else if {
+      |             ^
+      |             (
+Compilation failed
+be6a687
