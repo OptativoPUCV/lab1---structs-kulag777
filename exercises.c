@@ -43,6 +43,7 @@ los números pares del arreglo original.
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int *result;
   *newSize = 0;
+  int contarImpares = 0;
   for (int i = 0; i < size; i++) {
     if (arr[i] % 2 == 0) {
       result = (int *)realloc(result, (*newSize + 1) * sizeof(int));
@@ -55,10 +56,12 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     }
     else
     {
-      continue;
+      contarImpares++;
     }
   }
-  return result;
+  if(contarImpares == size)
+    return contarImpares;
+  else return result;
 }
 
 /*
