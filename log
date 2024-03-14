@@ -473,3 +473,9 @@ exercises.c:81:7: error: ‘else’ without a previous ‘if’
       |       ^~~~
 Compilation failed
 21e5421
+Thu 14 Mar 2024 10:26:55 PM UTC: 
+ exercises.c | 19 ++++++-------------
+ 1 file changed, 6 insertions(+), 13 deletions(-)
+ tests:  0|4
+total_score: 30/70
+9ac4f82
