@@ -485,3 +485,26 @@ Thu 14 Mar 2024 10:27:19 PM UTC:
  tests:  0|3
 total_score: 40/70
 94282d5
+Thu 14 Mar 2024 10:31:10 PM UTC: 
+ exercises.c | 19 +++++++++++++------
+ 1 file changed, 13 insertions(+), 6 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:76:42: error: expected statement before ‘)’ token
+   76 |     if (arr1[x] <= arr2[y] && x <= size1))
+      |                                          ^
+exercises.c:81:7: error: ‘else’ without a previous ‘if’
+   81 |       else
+      |       ^~~~
+exercises.c:87:10: error: ‘i’ undeclared (first use in this function)
+   87 |   while (i < size1) {
+      |          ^
+exercises.c:87:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:88:14: error: ‘k’ undeclared (first use in this function)
+   88 |       result[k++] = arr1[i++];
+      |              ^
+exercises.c:91:10: error: ‘j’ undeclared (first use in this function)
+   91 |   while (j < size2) {
+      |          ^
+Compilation failed
+bb68551
