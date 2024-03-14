@@ -249,3 +249,42 @@ exercises.c:69:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 e545cf8
+Thu 14 Mar 2024 09:48:58 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:72:33: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   72 | if(nuevoArreglo == NULL) return EXIT_FAILURE;
+      |                                 ^~~~~~~~~~~~
+exercises.c:69:6: note: declared here
+   69 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
+      |      ^~~~~~~~~~~~~~~~~
+exercises.c:77:33: error: expected statement before ‘)’ token
+   77 | for(int i = 0; i < (size1); i++)){
+      |                                 ^
+exercises.c:77:1: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   77 | for(int i = 0; i < (size1); i++)){
+      | ^~~
+exercises.c:77:34: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   77 | for(int i = 0; i < (size1); i++)){
+      |                                  ^
+exercises.c:78:27: error: expected statement before ‘)’ token
+   78 |     if(arr1[y] <= arr2[x])){
+      |                           ^
+exercises.c:78:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   78 |     if(arr1[y] <= arr2[x])){
+      |     ^~
+exercises.c:78:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   78 |     if(arr1[y] <= arr2[x])){
+      |                            ^
+exercises.c:79:20: error: ‘i’ undeclared (first use in this function)
+   79 |       nuevoArreglo[i] = arr1[y];
+      |                    ^
+exercises.c:79:20: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:82:5: error: ‘else’ without a previous ‘if’
+   82 |     else{
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1141ea7
