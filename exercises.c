@@ -69,7 +69,6 @@ arreglos en un tercer arreglo también ordenado.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) 
 {
   int* nuevoArreglo = (int*) malloc((size1 + size2) * sizeof(int));
-  if(nuevoArreglo == NULL) return EXIT_FAILURE;
 
   int x = 0;
   int y = 0;

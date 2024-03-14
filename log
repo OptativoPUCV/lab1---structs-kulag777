@@ -315,3 +315,27 @@ exercises.c:84:7: error: ‘else’ without a previous ‘if’
 cc1: all warnings being treated as errors
 Compilation failed
 1006ebc
+Thu 14 Mar 2024 09:56:10 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:76:35: error: expected statement before ‘)’ token
+   76 |   for(int i = 0; i < (size1); i++))
+      |                                   ^
+exercises.c:78:28: error: expected statement before ‘)’ token
+   78 |     if (arr1[y] <= arr2[x]))
+      |                            ^
+exercises.c:80:20: error: ‘i’ undeclared (first use in this function)
+   80 |       nuevoArreglo[i] = arr1[y];
+      |                    ^
+exercises.c:80:20: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:83:7: error: ‘else’ without a previous ‘if’
+   83 |       else
+      |       ^~~~
+exercises.c:71:8: error: variable ‘nuevoArreglo’ set but not used [-Werror=unused-but-set-variable]
+   71 |   int* nuevoArreglo = (int*) malloc((size1 + size2) * sizeof(int));
+      |        ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b1604a1
