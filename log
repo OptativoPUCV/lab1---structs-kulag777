@@ -50,3 +50,13 @@ exercises.c:59:15: error: array subscript is not an integer
       |               ^
 Compilation failed
 d66b36e
+Thu 14 Mar 2024 03:07:57 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:58:15: error: array subscript is not an integer
+   58 |         result[newSize] = arr[i];
+      |               ^
+Compilation failed
+f7d423e

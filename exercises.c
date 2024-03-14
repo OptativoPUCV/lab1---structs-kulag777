@@ -28,8 +28,7 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
   int k = size-1;
-  for(int i = 0; i < size/2 ; i++)
-    {
+  for(int i = 0; i < size/2 ; i++){
       int temp = arr[i];
       arr[i] = arr[k];
       arr[k] = temp;
@@ -50,7 +49,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     {
       if (arr[i] % 2 == 0)
       {
-        result = (int*)realloc(result, (newSize + 1) * sizeof(int));
+        result = (int*)realloc(result, (*newSize + 1) * sizeof(int));
         if (result == NULL)
         {
           *newSize = 0;
