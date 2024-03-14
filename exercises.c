@@ -44,17 +44,23 @@ y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
-  int *result = (int *)malloc(size * sizeof(int));
-  int j = 0;
+  int *result = NULL;
   for(int i = 0; i < size; i++)
     {
       if (arr[i] % 2 == 0)
       {
-        result[j] = arr[i];
-        j++;
+        result = (int*)realloc(result, (newSize + 1) * sizeof(int));
+        if (result == NULL)
+        {
+          *newSize = 0;
+          return NULL;
+        }
+        result[newSize] = arr[i];
+        *newSize++;
       }
     }
-  return result; }
+  return result; 
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
