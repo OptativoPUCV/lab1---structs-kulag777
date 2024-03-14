@@ -72,3 +72,14 @@ Thu 14 Mar 2024 03:11:15 PM UTC:
  tests:  0|4
 total_score: 30/70
 3f1e95b
+Thu 14 Mar 2024 03:17:28 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:44:8: error: ‘result’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   44 |   int *result;
+      |        ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+994d92e
