@@ -136,3 +136,14 @@ exercises.c:44:8: error: ‘result’ may be used uninitialized in this function
 cc1: all warnings being treated as errors
 Compilation failed
 ad14e2c
+Thu 14 Mar 2024 09:38:14 PM UTC: 
+ exercises.c | 7 ++-----
+ 1 file changed, 2 insertions(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:44:8: error: ‘result’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   44 |   int *result;
+      |        ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5e3cc62
