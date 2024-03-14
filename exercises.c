@@ -9,16 +9,14 @@ Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
-int findMax(int arr[], int size) { 
+int findMax(int arr[], int size) {
   int mayor = arr[0];
-  for(int i = 0; i < size; i++)
-    {
-      if (mayor < arr[i])
-      {
-        mayor = arr[i];
-      }
+  for (int i = 0; i < size; i++) {
+    if (mayor < arr[i]) {
+      mayor = arr[i];
     }
-  return mayor; 
+  }
+  return mayor;
 }
 
 /*
@@ -27,13 +25,13 @@ Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
-  int k = size-1;
-  for(int i = 0; i < size/2 ; i++){
-      int temp = arr[i];
-      arr[i] = arr[k];
-      arr[k] = temp;
-      k--;
-    }
+  int k = size - 1;
+  for (int i = 0; i < size / 2; i++) {
+    int temp = arr[i];
+    arr[i] = arr[k];
+    arr[k] = temp;
+    k--;
+  }
 }
 
 /*
@@ -42,24 +40,21 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int *result = NULL;
   *newSize = 0;
-  for(int i = 0; i < size; i++)
-    {
-      if (arr[i] % 2 == 0)
-      {
-        result = (int*)realloc(result, (*newSize + 1) * sizeof(int));
-        if (result == NULL)
-        {
-          *newSize = 0;
-          return NULL;
-        }
-        result[*newSize] = arr[i];
-        (*newSize)++;
+  for (int i = 0; i < size; i++) {
+    if (arr[i] % 2 == 0) {
+      result = (int *)realloc(result, (*newSize + 1) * sizeof(int));
+      if (result == NULL) {
+        *newSize = 0;
+        return NULL;
       }
+      result[*newSize] = arr[i];
+      (*newSize)++;
     }
-  return result; 
+  }
+  return result;
 }
 
 /*
