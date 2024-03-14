@@ -105,3 +105,9 @@ exercises.c:44:8: error: ‘result’ may be used uninitialized in this function
 cc1: all warnings being treated as errors
 Compilation failed
 c2555de
+Thu 14 Mar 2024 03:22:50 PM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+ tests:  0|4
+total_score: 30/70
+65a7162
