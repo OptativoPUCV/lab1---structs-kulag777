@@ -288,3 +288,30 @@ exercises.c:82:5: error: ‘else’ without a previous ‘if’
 cc1: all warnings being treated as errors
 Compilation failed
 1141ea7
+Thu 14 Mar 2024 09:55:40 PM UTC: 
+ exercises.c | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:72:35: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   72 |   if(nuevoArreglo == NULL) return EXIT_FAILURE;
+      |                                   ^~~~~~~~~~~~
+exercises.c:69:6: note: declared here
+   69 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
+      |      ^~~~~~~~~~~~~~~~~
+exercises.c:77:35: error: expected statement before ‘)’ token
+   77 |   for(int i = 0; i < (size1); i++))
+      |                                   ^
+exercises.c:79:28: error: expected statement before ‘)’ token
+   79 |     if (arr1[y] <= arr2[x]))
+      |                            ^
+exercises.c:81:20: error: ‘i’ undeclared (first use in this function)
+   81 |       nuevoArreglo[i] = arr1[y];
+      |                    ^
+exercises.c:81:20: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:84:7: error: ‘else’ without a previous ‘if’
+   84 |       else
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1006ebc
