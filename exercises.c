@@ -86,6 +86,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
       x++;
     }
   }
+  nuevoArreglo = result;
 }
 /*
 Ejercicio 5: Comprobación de Ordenación
